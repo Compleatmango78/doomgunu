@@ -18,11 +18,20 @@ function diff(target) {
 }
 
 export default function Countdown() {
-  const [target] = useState(getNextBirthday);
+  const [target, setTarget] = useState(getNextBirthday);
   const [t, setT] = useState(() => diff(target));
 
   useEffect(() => {
-    const id = setInterval(() => setT(diff(target)), 1000);
+    const id = setInterval(() => {
+      const now = Date.now();
+      if (target.getTime() - now <= 0) {
+        const next = getNextBirthday();
+        setTarget(next);
+        setT(diff(next));
+      } else {
+        setT(diff(target));
+      }
+    }, 1000);
     return () => clearInterval(id);
   }, [target]);
 
