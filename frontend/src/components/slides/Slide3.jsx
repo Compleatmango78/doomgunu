@@ -1,0 +1,86 @@
+import { Globe2 } from "lucide-react";
+
+// Placeholder space/dreamy photos — replace `src` with your own photos later.
+const PHOTOS = [
+  {
+    src: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800&q=80&auto=format&fit=crop",
+    caption: "ilk kahkahamız",
+    tilt: "tilt-1",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80&auto=format&fit=crop",
+    caption: "o uzun gece",
+    tilt: "tilt-2",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=800&q=80&auto=format&fit=crop",
+    caption: "yıldız avı",
+    tilt: "tilt-3",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=800&q=80&auto=format&fit=crop",
+    caption: "kahve & dert",
+    tilt: "tilt-4",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=800&q=80&auto=format&fit=crop",
+    caption: "şehrin üstünde",
+    tilt: "tilt-5",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1495197359483-d092478c170a?w=800&q=80&auto=format&fit=crop",
+    caption: "iyi ki sen",
+    tilt: "tilt-6",
+  },
+];
+
+export default function Slide3({ onNext }) {
+  return (
+    <section className="slide" data-testid="slide-3">
+      <div className="center">
+        <div className="eyebrow" style={{ justifyContent: "center", display: "inline-flex" }}>
+          <span className="dot" /> Bölüm 03 · Anılar Galaksisi <span className="dot" />
+        </div>
+        <h2 className="h-hero glow-text" style={{ marginTop: 20, fontSize: "clamp(2rem, 5vw, 3.6rem)" }}>
+          Birlikte topladığımız <em>küçük yıldızlar</em>
+        </h2>
+        <p className="lead" style={{ marginTop: 18, maxWidth: 620, marginLeft: "auto", marginRight: "auto" }}>
+          Her biri ayrı bir hatıra. Üzerine gelirsen biraz daha yakına gelirler.
+        </p>
+      </div>
+
+      <div
+        style={{
+          marginTop: 48,
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+          gap: "36px 28px",
+        }}
+        data-testid="photo-grid"
+      >
+        {PHOTOS.map((p, i) => (
+          <div key={i} className={`polaroid ${p.tilt}`} data-testid={`photo-${i + 1}`}>
+            <div className="tape" />
+            <div className="frame">
+              <img src={p.src} alt={p.caption} loading="lazy" />
+            </div>
+            <div className="caption">{p.caption}</div>
+          </div>
+        ))}
+      </div>
+
+      <div className="center" style={{ marginTop: 56 }}>
+        <button
+          data-testid="slide-3-next-button"
+          className="btn-cosmic"
+          onClick={onNext}
+        >
+          Dünya buradan ne kadar güzel
+          <span className="arrow">
+            <Globe2 size={12} />
+          </span>
+        </button>
+      </div>
+    </section>
+  );
+}
