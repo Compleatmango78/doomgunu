@@ -15,22 +15,28 @@ export default function Slide2({ onNext }) {
       <div className="poem-card" style={{ marginTop: 40 }} data-testid="poem-card">
         <div className="poem">
           <div className="stanza">
-            Bu gece gökyüzüne bir mesaj bıraktım,<br />
-            yıldızların arasına adını yazdım.<br />
-            Aysu, sen bir nebula kadar muhteşemsin,<br />
-            bir kuyrukluyıldız kadar nadirsin.
+            Dur! Yaslan ve beni dinle,<br />
+            Evet! Otur mahlukat ve biraz dinlen.<br />
+            Onca yıldızın arasından sesleniyorum;<br />
+            Sanırım bu güzele yelteniyorum.
           </div>
           <div className="stanza">
-            Yaşın bugün bir gezegen daha kazandı,<br />
-            yörüngende kahkaha, sevgi ve düşler.<br />
-            Hadi gel, bu evrenin kahramanı sensin,<br />
-            şov başlasın — pelerini sen takarsın.
+            Sen parlarken yıldızlar sönük kalırmış,<br />
+            der ki bir yazar seni düşünürken keçileri kaçırmış.<br />
+            Neyse bu kadın zaten deli,<br />
+            oturup yanıma sigarasını yakmış.
           </div>
           <div className="stanza">
             Bazıları yıldızları sayar, kim daha çok diye;<br />
             ben senin gözlerinde sayıyorum onları.<br />
             Çünkü en parlağı orada, senin içinde,<br />
-            ve ben hep o ışığın yörüngesindeyim.
+            ve ben ise o ışığın yörüngesindeyim.
+          </div>
+          <div className="stanza">
+            Şimdi üfle bakalım o mumları deli kadın.<br />
+            Mumlar sönüyor, ama sen her geçen gün daha parlaksın,<br />
+            kendine tutun — Ay ve suyu tuttuğu gibi adın,<br />
+            her gün senin olsun. Hem bugün, hem yarın…
           </div>
         </div>
         <div className="signature">— sevgiyle, hep yanından</div>
