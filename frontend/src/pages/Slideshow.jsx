@@ -5,6 +5,7 @@ import Slide3 from "../components/slides/Slide3";
 import Slide4 from "../components/slides/Slide4";
 import CosmosBackground from "../components/CosmosBackground";
 import Confetti from "../components/Confetti";
+import MusicPlayer from "../components/MusicPlayer";
 import { ArrowLeft, RotateCcw } from "lucide-react";
 
 const TOTAL = 4;
@@ -32,6 +33,7 @@ export default function Slideshow() {
   return (
     <div data-testid="birthday-slideshow">
       <CosmosBackground />
+      <MusicPlayer />
       {step === 4 && <Confetti />}
 
       {step > 1 && (
