@@ -8,8 +8,8 @@ const PHOTOS = [
     tilt: "tilt-1",
   },
   {
-    src: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&q=80&auto=format&fit=crop",
-    caption: "o uzun gece",
+    src: "https://customer-assets.emergentagent.com/job_cosmic-birthday-13/artifacts/b1jlh1ho_image.png",
+    caption: "Zoom toplantımız ve senin profil fotoğrafın",
     tilt: "tilt-2",
   },
   {
