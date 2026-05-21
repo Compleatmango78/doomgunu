@@ -19,18 +19,8 @@ const PHOTOS = [
   },
   {
     src: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=800&q=80&auto=format&fit=crop",
-    caption: "kahve & dert",
-    tilt: "tilt-4",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1464802686167-b939a6910659?w=800&q=80&auto=format&fit=crop",
-    caption: "şehrin üstünde",
-    tilt: "tilt-5",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1495197359483-d092478c170a?w=800&q=80&auto=format&fit=crop",
     caption: "iyi ki sen",
-    tilt: "tilt-6",
+    tilt: "tilt-4",
   },
 ];
 
