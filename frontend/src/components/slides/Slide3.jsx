@@ -13,8 +13,8 @@ const PHOTOS = [
     tilt: "tilt-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=800&q=80&auto=format&fit=crop",
-    caption: "yıldız avı",
+    src: "https://customer-assets.emergentagent.com/job_cosmic-birthday-13/artifacts/uurckl60_image.png",
+    caption: "eski bilardo zamanları",
     tilt: "tilt-3",
   },
   {
