@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import Countdown from "../Countdown";
 
 export default function Slide4() {
   return (
@@ -33,6 +34,8 @@ export default function Slide4() {
       <div className="center" style={{ marginTop: 40, display: "flex", justifyContent: "center", gap: 14, alignItems: "center", color: "var(--ink-muted)", fontSize: "0.85rem", letterSpacing: "0.2em", textTransform: "uppercase" }}>
         <Heart size={14} fill="currentColor" /> sevgiyle yapıldı <Heart size={14} fill="currentColor" />
       </div>
+
+      <Countdown />
     </section>
   );
 }

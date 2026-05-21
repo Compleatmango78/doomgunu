@@ -504,6 +504,65 @@ body {
 }
 .music-toggle .music-label { white-space: nowrap; }
 
+/* ---------- Countdown ---------- */
+.countdown {
+  margin-top: 64px;
+  text-align: center;
+}
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 2.4vw, 32px);
+  max-width: 880px;
+  margin: 0 auto;
+}
+.cd-unit {
+  position: relative;
+  padding: clamp(20px, 3vw, 32px) clamp(10px, 1.5vw, 18px);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px -25px rgba(0,0,0,0.7);
+  overflow: hidden;
+}
+.cd-unit::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 0%, rgba(255,213,138,0.18), transparent 60%);
+  pointer-events: none;
+}
+.cd-value {
+  position: relative;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  background: linear-gradient(180deg, #fff5d6 0%, #ffd58a 45%, #ff9ec2 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 40px rgba(255,213,138,0.25);
+}
+.cd-label {
+  position: relative;
+  margin-top: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+.cd-tagline {
+  margin-top: 28px;
+  font-family: 'Caveat', cursive;
+  font-size: clamp(1.4rem, 2.4vw, 2rem);
+  color: var(--nebula-gold);
+  text-shadow: 0 0 24px rgba(255,213,138,0.35);
+}
+
 /* utils */
 .center { text-align: center; }
 .glow-text {
@@ -518,6 +577,11 @@ body {
   .nav-back { left: 14px; }
   .nav-restart { right: 14px; }
   .music-toggle { bottom: 56px; right: 14px; padding: 7px 11px; font-size: 0.65rem; }
+  .countdown { margin-top: 44px; }
+  .countdown-grid { gap: 10px; }
+  .cd-unit { padding: 16px 6px; border-radius: 18px; }
+  .cd-label { font-size: 0.58rem; letter-spacing: 0.22em; }
+  .cd-tagline { margin-top: 20px; }
   .btn-ghost { padding: 8px 14px; font-size: 0.72rem; letter-spacing: 0.14em; }
   .btn-cosmic {
     padding: 14px 22px;

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
 // Müzik dosyası buraya: kullanıcının yüklediği MP3 link'ini koy
-const TRACK_URL = "/music/this-i-love.mp3"; // TODO: replace with uploaded asset URL
+const TRACK_URL = "https://customer-assets.emergentagent.com/job_cosmic-birthday-13/artifacts/gz92giwf_this-i-love.mp3";
 const TRACK_TITLE = "Guns N' Roses — This I Love";
 
 export default function MusicPlayer() {
