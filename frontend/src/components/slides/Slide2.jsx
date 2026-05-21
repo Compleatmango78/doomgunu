@@ -43,11 +43,11 @@ export default function Slide2({ onNext }) {
       </div>
 
       <p className="lead center" style={{ marginTop: 36, maxWidth: 720, marginLeft: "auto", marginRight: "auto" }}>
-        Aysu, seni tanıdığım ilk günden beri etrafında küçük bir ışık var —
-        odaya girdiğinde bile yıldızlar kıskançlıktan kıpırdar. Bugün
-        senin günün; gülmen, dilek tutman, fazlasıyla şımarman lazım.
-        Önümüzdeki yörüngede daha çok kahkaha, daha çok “iyi ki”
-        biriktirelim. Şimdi nefesini topla — parti yeni başlıyor.
+        Demek 19 oldun he doğum günü çocuğu seni! Vay be eniştem,
+        gözümün önünde büyüdün — daha dün seni tanıdığımda küçücük
+        çocuktun hduejdjej. Doğum günün kutlu olsun, seni cook ama cook
+        seviyorum. Umarım hediyemi beğenirsin ve umarım doğum gününe
+        kadar bozulmaz :( Neyse, hadi şova devamkeee!!!
       </p>
 
       <div className="center" style={{ marginTop: 44 }}>
