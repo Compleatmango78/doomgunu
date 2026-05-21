@@ -18,8 +18,8 @@ const PHOTOS = [
     tilt: "tilt-3",
   },
   {
-    src: "https://images.unsplash.com/photo-1502134249126-9f3755a50d78?w=800&q=80&auto=format&fit=crop",
-    caption: "iyi ki sen",
+    src: "https://customer-assets.emergentagent.com/job_cosmic-birthday-13/artifacts/k1z05ovk_image.png",
+    caption: "bana yaptığın logo",
     tilt: "tilt-4",
   },
 ];
