@@ -3,8 +3,8 @@ import { Globe2 } from "lucide-react";
 // Placeholder space/dreamy photos — replace `src` with your own photos later.
 const PHOTOS = [
   {
-    src: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800&q=80&auto=format&fit=crop",
-    caption: "ilk kahkahamız",
+    src: "https://customer-assets.emergentagent.com/job_cosmic-birthday-13/artifacts/gq56eam5_image.png",
+    caption: "sana ilk yaptığım şey olabilir",
     tilt: "tilt-1",
   },
   {
